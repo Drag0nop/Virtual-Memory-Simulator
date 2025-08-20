@@ -1,0 +1,31 @@
+virtual_memory_simulator/
+│
+├── main.py                      # Entry point, simulation controller
+├── memory/
+│   ├── __init__.py
+│   ├── memory_manager.py        # Virtual to physical memory management
+│   ├── page_table.py            # Page Table structure and operations
+│
+├── algorithms/
+│   ├── __init__.py
+│   ├── fifo.py                  # FIFO replacement algorithm
+│   ├── lru.py                   # LRU algorithm (stack or counter-based)
+│   ├── optimal.py               # Optimal page replacement (future access)
+│
+├── io/
+│   ├── input_loader.py          # Loads memory access patterns
+│   ├── logger.py                # Logs steps for debugging
+│
+├── ui/
+│   ├── cli.py                   # CLI output with tables
+│   ├── visualizer.py            # (Optional) Graph-based visualization
+│
+├── data/
+│   ├── sample_input1.txt        # Sample process memory reference strings
+│   ├── results/                 # Output logs and stats
+│
+├── tests/
+│   ├── test_fifo.py             # Unit tests for FIFO
+│   ├── test_memory_manager.py
+│
+└── README.md
