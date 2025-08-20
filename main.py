@@ -1,7 +1,7 @@
 # main.py
 
 import sys
-from io.input_loader import InputLoader
+from file_io.input_loader import InputLoader
 from ui.cli import CLI
 
 def main():
